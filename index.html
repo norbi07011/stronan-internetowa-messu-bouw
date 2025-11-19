@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messu Bouw | Premium Houtrotherstel & Vastgoedonderhoud</title>
+    <meta name="description" content="Specialist in houtrotherstel, timmerwerk, gevelonderhoud en inspecties. Messu Bouw staat voor kwaliteit en duurzame renovatie." />
+    
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/jpeg" href="/publick/messu-bouw-logo.jpg" />
+    <link rel="apple-touch-icon" href="/publick/messu-bouw-logo.jpg" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Messu Bouw | Premium Houtrotherstel & Vastgoedonderhoud" />
+    <meta property="og:description" content="Specialist in houtrotherstel, timmerwerk, gevelonderhoud en inspecties. Messu Bouw staat voor kwaliteit en duurzame renovatie." />
+    <meta property="og:image" content="/publick/messu-bouw-logo.jpg" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Messu Bouw | Premium Houtrotherstel & Vastgoedonderhoud" />
+    <meta name="twitter:description" content="Specialist in houtrotherstel, timmerwerk, gevelonderhoud en inspecties." />
+    <meta name="twitter:image" content="/publick/messu-bouw-logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                800: '#1e293b',
+                900: '#0f172a',
+                950: '#020617', // Deepest cinematic black/blue
+              },
+              copper: {
+                400: '#fb923c', // Light Copper
+                500: '#f97316', // Base Copper
+                600: '#ea580c', // Dark Copper
+                glow: 'rgba(249, 115, 22, 0.5)',
+              },
+              gold: {
+                400: '#fbbf24',
+                500: '#f59e0b',
+                600: '#d97706',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Cinzel', 'serif'], // For premium headers if loaded, fallback sans
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'spotlight': 'radial-gradient(circle at center, rgba(249,115,22,0.15) 0%, transparent 70%)',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Premium Dark Mode & Film Grain */
+      body {
+        background-color: #020617;
+        color: #e2e8f0;
+        overflow-x: hidden;
+      }
+      
+      .film-grain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #f97316;
+      }
+
+      /* Glassmorphism */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.03);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .glass-header {
+        background: rgba(2, 6, 23, 0.85);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      /* Text Utilities */
+      .text-glow {
+        text-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+      }
+      
+      /* 3D Utilities */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      /* 3D Rotation Classes */
+      .rotate-y-2 { transform: rotateY(2deg); }
+      .rotate-y-6 { transform: rotateY(6deg); }
+      .rotate-y-12 { transform: rotateY(12deg); }
+      .rotate-x-1 { transform: rotateX(1deg); }
+      .rotate-x-2 { transform: rotateX(2deg); }
+      .rotate-x-6 { transform: rotateX(6deg); }
+      
+      /* Spotlight Effect Class */
+      .spotlight-card:hover {
+        background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.06), transparent 40%);
+      }
+
+      /* CTA Button Shine Animation */
+      .btn-shine {
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-shine::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.25) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: skewX(-25deg);
+        animation: shine 6s infinite;
+        pointer-events: none;
+      }
+      @keyframes shine {
+        0% { left: -100%; }
+        15% { left: 200%; }
+        100% { left: 200%; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased">
+    <div class="film-grain"></div>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
