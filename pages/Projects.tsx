@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
                      {/* Watermark Logo */}
                      <div className="absolute bottom-3 right-3 z-30 opacity-40 group-hover:opacity-60 transition-opacity duration-300">
                        <img 
-                         src="/publick/messu-bouw-logo.jpg" 
+                         src="/messu-bouw-logo.jpg" 
                          alt="Messu Bouw" 
                          className="h-10 w-10 object-contain rounded-lg bg-navy-900/80 backdrop-blur-sm p-1.5 border border-white/10"
                        />

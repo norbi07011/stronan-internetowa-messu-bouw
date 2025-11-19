@@ -59,7 +59,7 @@ const LoadingScreen: React.FC = () => {
           {/* Logo */}
           <div className="relative bg-gradient-to-br from-navy-800 to-navy-950 border-2 border-copper-500/50 p-4 rounded-2xl shadow-2xl preserve-3d">
             <img 
-              src="/publick/messu-bouw-logo.jpg" 
+              src="/messu-bouw-logo.jpg" 
               alt="Messu Bouw Logo" 
               className="h-24 w-24 md:h-32 md:w-32 object-contain"
             />

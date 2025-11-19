@@ -77,7 +77,7 @@ const About: React.FC = () => {
                {/* Messu Bouw Certification Badge */}
                <div className="mt-6 bg-gradient-to-br from-copper-500/10 to-gold-500/10 p-6 rounded-xl border border-copper-500/20 flex items-center space-x-4 hover:border-copper-500/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(249,115,22,0.2)]">
                   <img 
-                    src="/publick/messu-bouw-logo.jpg" 
+                    src="/messu-bouw-logo.jpg" 
                     alt="Messu Bouw Gecertificeerd" 
                     className="h-16 w-16 object-contain rounded-lg bg-navy-950/80 p-2 border border-copper-500/30"
                   />

@@ -56,7 +56,7 @@ const NotFound: React.FC = () => {
               className="absolute inset-0 bg-copper-500 blur-2xl rounded-full"
             />
             <img 
-              src="/publick/messu-bouw-logo.jpg" 
+              src="/messu-bouw-logo.jpg" 
               alt="Messu Bouw Logo" 
               className="h-24 w-24 object-contain rounded-2xl border-2 border-copper-500/50 bg-navy-900/80 p-3 relative z-10"
             />

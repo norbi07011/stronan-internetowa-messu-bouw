@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                 <div className="absolute inset-0 bg-copper-500 blur-md opacity-20 group-hover:opacity-40 transition-opacity"></div>
                 <div className="bg-gradient-to-br from-navy-800 to-navy-950 border border-copper-500/30 p-1 rounded-lg relative z-10 group-hover:scale-105 transition-transform duration-300 overflow-hidden">
                    <img 
-                     src="/publick/messu-bouw-logo.jpg" 
+                     src="/messu-bouw-logo.jpg" 
                      alt="Messu Bouw Logo" 
                      className="h-10 w-10 object-contain group-hover:rotate-3 transition-transform duration-300"
                    />

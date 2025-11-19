@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/publick/messu-bouw-logo.jpg" 
+                src="/messu-bouw-logo.jpg" 
                 alt="Messu Bouw Logo" 
                 className="h-12 w-12 object-contain rounded-lg border border-copper-500/30"
               />
