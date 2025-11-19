@@ -195,6 +195,7 @@ const Header: React.FC = () => {
                </button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label={isMobileMenuOpen ? "Sluit menu" : "Open menu"}
                 className="p-2 text-slate-300 hover:text-copper-500 transition-colors"
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -226,6 +227,7 @@ const Header: React.FC = () => {
                         {item.dropdown && (
                           <button 
                             onClick={() => setExpandedMobileMenu(expandedMobileMenu === item.key ? null : item.key)}
+                            aria-label={expandedMobileMenu === item.key ? "Sluit submenu" : "Open submenu"}
                             className="p-2 text-slate-500"
                           >
                             <ChevronDown className={`transition-transform duration-300 ${expandedMobileMenu === item.key ? 'rotate-180' : ''}`} />
